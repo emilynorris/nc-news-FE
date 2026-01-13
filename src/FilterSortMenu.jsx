@@ -1,6 +1,6 @@
 function FilterSortMenu () {
     return (
-        <ul classname='filterSortMenu'>
+        <ul className='filterSortMenu'>
             <li>Filter Option 1</li>
             <li>Filter Option 2</li>
             <li>Sort By</li>

@@ -1,11 +1,14 @@
-function ArticleList () {
+import ArticleCard from './ArticleCard'
+
+function ArticleList ({articles}) {
     return (
-        <ul classname='articleList'>
-            <li>Article 1</li>
-            <li>Article 2</li>
-            <li>Article 3</li>
-            <li>Article 4</li>
-            <li>Article 5</li>
+        <ul className='articleList'>
+            {articles.map ((article) => {
+                return <ArticleCard 
+                key={article.article_id} 
+                article={article}
+                />
+            })}
         </ul>
     )
 }
